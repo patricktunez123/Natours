@@ -12,9 +12,13 @@ Dark green: #28b485
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px; /*to make our life easier so that we do not have to calculate to many caluclations*/
+}
+
 body {
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-family: "Loto", sans-serif;
   line-height: 1.7;
   color: #777;
@@ -36,11 +40,11 @@ body {
 
 .logo-container {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 .logo {
-  height: 35px;
+  height: 3.5rem;
   object-fit: contain;
 }
 .box-container {
@@ -54,39 +58,40 @@ body {
 .tex-box {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 .text-top,
 .text-bottom {
   display: block;
 }
 .text-top {
-  font-size: 60px;
-  letter-spacing: 35px;
+  font-size: 6rem;
+  letter-spacing: 3.5rem;
   font-weight: 400;
   animation-name: movingInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
 .text-bottom {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 18.5px;
+  letter-spacing: 1.85rem;
   animation-name: movingInRight;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
 .btn {
   background: #fff;
-  padding: 15px 20px;
+  padding: 1.5rem 2rem;
   color: inherit;
   text-transform: uppercase;
   display: inline-block; /* u can not animate inline element so have to make it inline -blok */
-  border-radius: 100px;
+  border-radius: 10rem;
   transition-property: all;
   transition-timing-function: ease-out;
   transition-duration: 0.2s;
   font-weight: 400;
+  font-size: 1.6rem;
 }
 .btn:link,
 .btn:visited {
@@ -94,18 +99,18 @@ body {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 2px rgba(0, 0, 0, 0.4);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 10rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.4);
 }
 
 @keyframes movingInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   100% {
@@ -117,7 +122,7 @@ body {
 @keyframes movingInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   100% {
