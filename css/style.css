@@ -13,7 +13,10 @@ Dark green: #28b485
 }
 
 html {
-  font-size: 10px; /*to make our life easier so that we do not have to calculate to many caluclations*/
+  /* font-size: 10px; to make our life easier so that we do not have to calculate to many caluclations */
+  /* so it's good to use : 100 * 16 / 100 is 0.625 then 0.625 * 100 is 62.5%*/
+
+  font-size: 62.5%;
 }
 
 body {
